@@ -1,6 +1,6 @@
 #ifndef CLOCK_H
 #define CLOCK_H
-#include<chrono>
+#include <chrono>
 
 class Clock 
 {
@@ -8,7 +8,7 @@ public:
 	Clock() 
 	{
 		seconds = std::chrono::system_clock::now().time_since_epoch() /
-			std::chrono::seconds(1);
+				  std::chrono::seconds(1);
 	}
 	Clock(long long sec) : seconds(sec) {}
 	int get_hours() const;

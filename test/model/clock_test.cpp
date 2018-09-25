@@ -2,8 +2,7 @@
 #include "catch.hpp"
 #include "clock.h"
 
-TEST_CASE("Test get hours from seconds") 
-{
+TEST_CASE("Test get hours from seconds") {
 	Clock clock(3600);
 	REQUIRE(clock.get_hours() == 1);
 
@@ -17,8 +16,7 @@ TEST_CASE("Test get hours from seconds")
 	REQUIRE(clock3.get_hours() == 17);
 }
 
-TEST_CASE("Test get minutes from seconds") 
-{
+TEST_CASE("Test get minutes from seconds") {
 	Clock clock(3900);
 	REQUIRE(clock.get_minutes() == 0);
 
@@ -29,8 +27,7 @@ TEST_CASE("Test get minutes from seconds")
 	REQUIRE(clock2.get_minutes() == 42);
 }
 
-TEST_CASE("Test get seconds from seconds since 1970") 
-{
+TEST_CASE("Test get seconds from seconds since 1970") {
 	Clock clock(3600);
 	REQUIRE(clock.get_seconds() == 0);
 
