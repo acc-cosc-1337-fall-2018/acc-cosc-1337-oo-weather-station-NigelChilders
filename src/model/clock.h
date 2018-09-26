@@ -2,8 +2,7 @@
 #define CLOCK_H
 #include <chrono>
 
-class Clock 
-{
+class Clock {
 public:
 	Clock() 
 	{
@@ -19,7 +18,6 @@ public:
 private:
 	long long seconds;
 	void update_time();
-
 };
 
 #endif // CLOCK_H

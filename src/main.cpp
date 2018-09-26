@@ -2,8 +2,7 @@
 #include <iostream>
 #include <thread>
 
-int main() 
-{
+int main() {
 	Clock clock;
 
 	int i{ 0 };
